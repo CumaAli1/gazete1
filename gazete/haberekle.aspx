@@ -8,14 +8,11 @@
 
     <div class="container" style="height:400px;">
       <div class="row">
+          <h3 style="text-align:center; margin-bottom:20px;">HABER EKLE</h3>
         <div class="col-4">
             <div>
                 <label class="form-label">Haber Başlığı</label>
                 <asp:TextBox ID="txtbaslık"  class="form-control" runat="server"></asp:TextBox>
-            </div>
-            <div>
-                <label class="form-label">Haber Türü</label>
-                <asp:TextBox ID="txttur"  class="form-control" runat="server"></asp:TextBox>
             </div>
             <div class="mt-3">
                 <label class="form-label">Fotoğraflar (En fazla 5 fotoğraf seçin)</label>

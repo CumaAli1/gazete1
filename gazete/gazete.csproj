@@ -76,6 +76,8 @@
     <Content Include="habersil.aspx" />
     <Content Include="index.aspx" />
     <Content Include="indexadmin.aspx" />
+    <Content Include="kayıt.aspx" />
+    <Content Include="resim\logo.jpg" />
     <Content Include="resim\r1.2.jpg" />
     <Content Include="resim\r1.jpg" />
     <Content Include="resim\r10.jpg" />
@@ -165,6 +167,13 @@
     </Compile>
     <Compile Include="indexadmin.aspx.designer.cs">
       <DependentUpon>indexadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kayıt.aspx.cs">
+      <DependentUpon>kayıt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kayıt.aspx.designer.cs">
+      <DependentUpon>kayıt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

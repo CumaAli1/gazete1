@@ -11,44 +11,44 @@ namespace gazete
 {
 
 
-    public partial class haberekle
+    public partial class kayıt
     {
 
         /// <summary>
-        /// txtbaslık control.
+        /// txtmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbaslık;
+        protected global::System.Web.UI.WebControls.TextBox txtmail;
 
         /// <summary>
-        /// foto control.
+        /// txtsifre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload foto;
+        protected global::System.Web.UI.WebControls.TextBox txtsifre;
 
         /// <summary>
-        /// txticerik control.
+        /// txtad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txticerik;
+        protected global::System.Web.UI.WebControls.TextBox txtad;
 
         /// <summary>
-        /// btnhaberkaydet control.
+        /// btnkayıt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnhaberkaydet;
+        protected global::System.Web.UI.WebControls.Button btnkayıt;
 
         /// <summary>
         /// lbluyarı control.

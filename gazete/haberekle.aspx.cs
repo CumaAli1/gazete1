@@ -18,21 +18,13 @@ namespace gazete
         protected void btnhaberkaydet_Click(object sender, EventArgs e)
         {
             OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + Server.MapPath("dtgazete.mdb"));
-
             baglanti.Open();
-            
-            string sorgu = "INSERT INTO haberler (haberbaslıgı, habericerigi, haberturu) VALUES (@haberbaslıgı, @habericerigi, @haberturu)";
-
+            string sorgu = "INSERT INTO haberler (haberbaslık, habericerik) VALUES (@haberbaslıgı, @habericerigi)";
             string haberbaslık = txtbaslık.Text;
             string habericerik = txticerik.Text;
-            string habertur = txttur.Text;
-
             OleDbCommand komut = new OleDbCommand(sorgu, baglanti);
-            
-            komut.Parameters.AddWithValue("@haberbaslıgı", haberbaslık);
-            komut.Parameters.AddWithValue("@habericerigi", habericerik);
-            komut.Parameters.AddWithValue("@haberturu", habertur);
-           
+            komut.Parameters.AddWithValue("@haberbaslık", haberbaslık);
+            komut.Parameters.AddWithValue("@habericerik", habericerik);
             komut.ExecuteNonQuery();
             baglanti.Close();
 

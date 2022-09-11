@@ -47,13 +47,22 @@ namespace gazete
                     Session.Add("kullanici", dr[1].ToString());
                     Session.Timeout = 5;
 
-                    uyarı.Text = "Giriş Başarılı...";
-                 
+                    if(mail=="admin" && sifre == "admin")
+                    {
+                        Response.Redirect("indexadmin.aspx");
+                    }
+                    else
+                    {
+                        
+                        Response.Redirect("index.aspx");
+                    }
+                   
                 }
                 else
                 {
                     uyarı.Text = "giriş hatalı";
                 }
+                
 
             }
             catch
@@ -61,6 +70,11 @@ namespace gazete
 
             }
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("kayıt.aspx");
         }
     }
 }

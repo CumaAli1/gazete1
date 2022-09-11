@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container" style="height:400px;">
       <div class="row">
+          <h3 style="text-align:center; margin-bottom:20px;">HABER DÜZENLE</h3>
         <div class="col-4">
             <div>
                 <div>
